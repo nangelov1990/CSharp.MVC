@@ -77,3 +77,4 @@ E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\01\LiveDemo\LiveDemo\bin\EntityFramework
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\01\LiveDemo\LiveDemo\bin\EntityFramework.SqlServer.dll
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\01\LiveDemo\LiveDemo\bin\EntityFramework.xml
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\01\LiveDemo\LiveDemo\bin\EntityFramework.SqlServer.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\01\LiveDemo\LiveDemo\obj\Debug\LiveDemo.csprojResolveAssemblyReference.cache
