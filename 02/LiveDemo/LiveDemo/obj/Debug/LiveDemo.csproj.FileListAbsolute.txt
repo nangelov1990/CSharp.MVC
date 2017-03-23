@@ -1,0 +1,92 @@
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\csc.exe
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\System.Collections.Immutable.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\vbc.exe
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\VBCSCompiler.exe
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\roslyn\VBCSCompiler.exe.config
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\LiveDemo.dll.config
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\LiveDemo.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\LiveDemo.pdb
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\Antlr3.Runtime.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\LiveDemo.Data.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\Microsoft.Web.Infrastructure.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\Newtonsoft.Json.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.Helpers.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.Mvc.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.Optimization.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.Razor.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.WebPages.Deployment.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.WebPages.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.WebPages.Razor.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\WebGrease.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\EntityFramework.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\LiveDemo.Models.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\LiveDemo.Data.pdb
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.Helpers.xml
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.Mvc.xml
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.Optimization.xml
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.Razor.xml
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.WebPages.xml
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.WebPages.Deployment.xml
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\System.Web.WebPages.Razor.xml
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\Antlr3.Runtime.pdb
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\Newtonsoft.Json.xml
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\EntityFramework.xml
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\bin\LiveDemo.Models.pdb
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\obj\Debug\LiveDemo.csprojResolveAssemblyReference.cache
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\obj\Debug\LiveDemo.dll
+c:\users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo\obj\Debug\LiveDemo.pdb
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\csc.exe
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\System.Collections.Immutable.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\System.Reflection.Metadata.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\vbc.exe
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\VBCSCompiler.exe
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\roslyn\VBCSCompiler.exe.config
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\LiveDemo.dll.config
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\LiveDemo.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\LiveDemo.pdb
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\Antlr3.Runtime.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\LiveDemo.Data.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\Microsoft.Web.Infrastructure.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\Newtonsoft.Json.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.Helpers.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.Mvc.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.Optimization.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.Razor.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.WebPages.Deployment.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.WebPages.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.WebPages.Razor.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\WebGrease.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\EntityFramework.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\LiveDemo.Models.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\LiveDemo.Data.pdb
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.Helpers.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.Mvc.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.Optimization.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.Razor.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.WebPages.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.WebPages.Deployment.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\System.Web.WebPages.Razor.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\Antlr3.Runtime.pdb
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\Newtonsoft.Json.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\EntityFramework.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\bin\LiveDemo.Models.pdb
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\obj\Debug\LiveDemo.csprojResolveAssemblyReference.cache
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\obj\Debug\LiveDemo.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo\obj\Debug\LiveDemo.pdb

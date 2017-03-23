@@ -1,0 +1,10 @@
+c:\Users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo.Models\bin\Debug\LiveDemo.Models.dll
+c:\Users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo.Models\bin\Debug\LiveDemo.Models.pdb
+c:\Users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.csprojResolveAssemblyReference.cache
+c:\Users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.dll
+c:\Users\angelovn\documents\visual studio 2015\Projects\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.pdb
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\bin\Debug\LiveDemo.Models.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\bin\Debug\LiveDemo.Models.pdb
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.csprojResolveAssemblyReference.cache
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.pdb
