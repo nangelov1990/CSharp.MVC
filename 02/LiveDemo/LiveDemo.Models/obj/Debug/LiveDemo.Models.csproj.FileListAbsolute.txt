@@ -8,3 +8,8 @@ E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\bin\Debug\Li
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.csprojResolveAssemblyReference.cache
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.dll
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.pdb
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\bin\Debug\LiveDemo.Models.dll
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\bin\Debug\LiveDemo.Models.pdb
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.csprojResolveAssemblyReference.cache
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.dll
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Models\obj\Debug\LiveDemo.Models.pdb

@@ -22,3 +22,15 @@ E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\bin\Debug\Enti
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\obj\Debug\LiveDemo.Data.csprojResolveAssemblyReference.cache
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\obj\Debug\LiveDemo.Data.dll
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\obj\Debug\LiveDemo.Data.pdb
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\bin\Debug\LiveDemo.Data.dll.config
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\bin\Debug\LiveDemo.Data.dll
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\bin\Debug\LiveDemo.Data.pdb
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\bin\Debug\EntityFramework.dll
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\bin\Debug\EntityFramework.SqlServer.dll
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\bin\Debug\LiveDemo.Models.dll
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\bin\Debug\LiveDemo.Models.pdb
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\bin\Debug\EntityFramework.xml
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\bin\Debug\EntityFramework.SqlServer.xml
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\obj\Debug\LiveDemo.Data.csprojResolveAssemblyReference.cache
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\obj\Debug\LiveDemo.Data.dll
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\LiveDemo\LiveDemo.Data\obj\Debug\LiveDemo.Data.pdb

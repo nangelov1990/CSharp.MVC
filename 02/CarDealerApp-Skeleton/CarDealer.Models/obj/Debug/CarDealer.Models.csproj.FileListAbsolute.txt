@@ -1,0 +1,5 @@
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.dll
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.pdb
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.dll
+Z:\Code.Proj\SU.Proj\SE\Prof.Mod\C#.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.pdb
