@@ -1,0 +1,1 @@
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Solution-Routing-Table\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache

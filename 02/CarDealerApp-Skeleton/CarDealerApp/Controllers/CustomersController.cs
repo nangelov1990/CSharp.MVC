@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -6,31 +7,88 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+
 using CarDealer.Models;
-using CarDealerApp.Models;
+using CarDealer.Data;
 
 namespace CarDealerApp.Controllers
 {
     public class CustomersController : Controller
     {
-        private CarDealerAppContext db = new CarDealerAppContext();
+        private CarDealerContext context = new CarDealerContext();
+
+        // GET: Ordered Customers
+        public ActionResult All(string parameter)
+        {
+            IList<Customer> orderedCmrs;
+            string listOrder = null;
+            if (parameter != null)
+            {
+                listOrder = parameter.ToLower();
+            }
+
+            if (listOrder == "ascending")
+            {
+                orderedCmrs = context.Customers
+                    .OrderByDescending(c => c.BirthDate)
+                    .ThenBy(c => c.IsYoungDriver)
+                    .ToList();
+            }
+            else if (listOrder == "descending")
+            {
+                orderedCmrs = context.Customers
+                    .OrderBy(c => c.BirthDate)
+                    .ThenBy(c => c.IsYoungDriver)
+                    .ToList();
+            }
+            else
+            {
+                orderedCmrs = context.Customers.ToList();
+            }
+
+            return View(orderedCmrs);
+        }
 
         // GET: Customers
         public ActionResult Index()
         {
-            var allCmrs = db.Customers.ToList();
+            var allCmrs = context.Customers.ToList();
 
             return View(allCmrs);
         }
 
-        // GET: Customers/Details/5
-        public ActionResult Details(int? id)
+        // GET: Customers/5
+        public ActionResult TotalSales(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customer customer = db.Customers.Find(id);
+            Customer customer = context.Customers.Find(id);
+            if (customer == null)
+            {
+                return HttpNotFound();
+            }
+            var customers = context.Customers;
+            var sales = context.Sales;
+
+            var data = customers
+                .GroupJoin(sales,
+                    c => c.Id,
+                    s => s.Customer.Id,
+                    (c, result) => new {c, result});
+
+            return View(data);
+        }
+
+        // GET: Customers/Details/5
+        public ActionResult Details(int? parameter)
+        {
+            if (parameter == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Customer customer = context.Customers.Find(parameter);
             if (customer == null)
             {
                 return HttpNotFound();
@@ -53,8 +111,8 @@ namespace CarDealerApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Customers.Add(customer);
-                db.SaveChanges();
+                context.Customers.Add(customer);
+                context.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -68,7 +126,7 @@ namespace CarDealerApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customer customer = db.Customers.Find(id);
+            Customer customer = context.Customers.Find(id);
             if (customer == null)
             {
                 return HttpNotFound();
@@ -85,8 +143,8 @@ namespace CarDealerApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(customer).State = EntityState.Modified;
-                db.SaveChanges();
+                context.Entry(customer).State = EntityState.Modified;
+                context.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(customer);
@@ -99,7 +157,7 @@ namespace CarDealerApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customer customer = db.Customers.Find(id);
+            Customer customer = context.Customers.Find(id);
             if (customer == null)
             {
                 return HttpNotFound();
@@ -112,9 +170,9 @@ namespace CarDealerApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Customer customer = db.Customers.Find(id);
-            db.Customers.Remove(customer);
-            db.SaveChanges();
+            Customer customer = context.Customers.Find(id);
+            context.Customers.Remove(customer);
+            context.SaveChanges();
             return RedirectToAction("Index");
         }
 
@@ -122,7 +180,7 @@ namespace CarDealerApp.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                context.Dispose();
             }
             base.Dispose(disposing);
         }

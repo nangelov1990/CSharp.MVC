@@ -1,0 +1,16 @@
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\CarDealer.Services.dll.config
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\CarDealer.Services.dll
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\CarDealer.Services.pdb
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\AutoMapper.dll
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\CarDealer.Data.dll
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\CarDealer.Models.dll
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\EntityFramework.dll
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\EntityFramework.SqlServer.dll
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\CarDealer.Data.pdb
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\CarDealer.Models.pdb
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\AutoMapper.xml
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\EntityFramework.xml
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\bin\Debug\EntityFramework.SqlServer.xml
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\obj\Debug\CarDealer.Services.csprojResolveAssemblyReference.cache
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\obj\Debug\CarDealer.Services.dll
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-2-Solution\CarDealer.Services\obj\Debug\CarDealer.Services.pdb

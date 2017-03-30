@@ -9,7 +9,7 @@ namespace CarDealer.Data.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(CarDealer.Data.CarDealerContext context)
