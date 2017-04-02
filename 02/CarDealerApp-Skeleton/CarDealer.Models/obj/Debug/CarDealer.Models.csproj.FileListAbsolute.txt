@@ -8,3 +8,5 @@ F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\Ca
 F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.dll
 F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.pdb
 F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
+F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\AutoMapper.dll
+F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\AutoMapper.xml

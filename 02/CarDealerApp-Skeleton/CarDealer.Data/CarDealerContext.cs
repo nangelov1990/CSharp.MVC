@@ -1,3 +1,5 @@
+using CarDealer.Models.EntityModels;
+
 namespace CarDealer.Data
 {
     using Models;

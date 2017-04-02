@@ -1,0 +1,11 @@
+﻿@model CarDealer.Models.ViewModels.SaleVm
+
+@{
+    ViewBag.Title = "About Sale";
+}
+
+<br/>
+<p>Owner: @Model.Customer.Name</p>
+<p>Car info: @Model.Car.Make @Model.Car.Model - @Model.Car.TravelledDistance km</p>
+<p>Price: $ @Model.Price</p>
+<p>Discount: @(Model.Discount * 100) %</p>

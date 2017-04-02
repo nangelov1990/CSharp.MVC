@@ -22,3 +22,5 @@ F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\Enti
 F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.csprojResolveAssemblyReference.cache
 F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.dll
 F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.pdb
+F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\AutoMapper.dll
+F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\AutoMapper.xml

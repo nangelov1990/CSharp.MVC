@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CarDealer.Models.ViewModels.SaleVm>
+
+@{
+    ViewBag.Title = "All Sales";
+}
+
+<h2>All Sales</h2>
+<table class="table table-striped">
+    <tr>
+        <th>Owner</th>
+        <th>Car info</th>
+        <th>Price</th>
+        <th>Discount</th>
+    </tr>
+    @foreach (var sale in Model) {
+    <tr>
+        <td>@sale.Customer.Name</td>
+        <td>@sale.Car.Make @sale.Car.Model - @sale.Car.TravelledDistance km</td>
+        <td>$ @sale.Price</td>
+        <td>@(sale.Discount*100) %</td>
+    </tr>
+}
+
+</table>
