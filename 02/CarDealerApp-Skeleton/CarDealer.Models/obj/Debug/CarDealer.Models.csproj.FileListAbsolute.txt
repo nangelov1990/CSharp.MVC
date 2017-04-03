@@ -10,3 +10,10 @@ F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\Ca
 F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
 F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\AutoMapper.dll
 F:\Projects\SU\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\AutoMapper.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.pdb
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\AutoMapper.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\AutoMapper.xml
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.dll
+E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.pdb

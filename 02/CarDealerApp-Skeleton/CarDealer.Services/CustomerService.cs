@@ -5,7 +5,7 @@
     using System.Linq;
 
     using AutoMapper;
-
+    using Models.BindingModels;
     using Models.EntityModels;
     using Models.ViewModels;
 
@@ -52,6 +52,53 @@
             };
 
             return cmrVm;
+        }
+
+        public void AddCustomer(CmrBm bind)
+        {
+            Customer cmr = Mapper.Instance.Map<CmrBm, Customer>(bind);
+            if (DateTime.Now.Year - bind.BirthDate.Year < 21)
+            {
+                cmr.IsYoungDriver = true;
+            }
+
+            this.Context.Customers.Add(cmr);
+            this.Context.SaveChanges();
+        }
+
+        public EditCmrVm ViewEditCmr(int id)
+        {
+            Customer cmr = this.Context.Customers.Find(id);
+            EditCmrVm cmrVm = new EditCmrVm()
+            {
+                Id = cmr.Id,
+                Name = cmr.Name,
+                BirthDate = cmr.BirthDate
+            };
+
+            return cmrVm;
+        }
+
+        public void EditCmr(EditCmrBm bind)
+        {
+            Customer cmr = this.Context.Customers.Find(bind.Id);
+            if (cmr == null)
+            {
+                throw new ArgumentException("Cannot find customer with such id!");
+            }
+
+            if (DateTime.Now.Year - bind.BirthDate.Year < 21)
+            {
+                cmr.IsYoungDriver = true;
+            }
+            else
+            {
+                cmr.IsYoungDriver = false;
+            }
+
+            cmr.Name = bind.Name;
+            cmr.BirthDate = bind.BirthDate;
+            this.Context.SaveChanges();
         }
     }
 }

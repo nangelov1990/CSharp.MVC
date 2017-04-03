@@ -6,6 +6,7 @@
     using System.Web.Routing;
 
     using AutoMapper;
+    using CarDealer.Models.BindingModels;
     using CarDealer.Models.EntityModels;
     using CarDealer.Models.ViewModels;
 
@@ -37,6 +38,7 @@
                     .ForMember(vm => vm.Price,
                         configExpression =>
                         configExpression.MapFrom(s => s.Car.Parts.Sum(p => p.Price)));
+                expression.CreateMap<CmrBm, Customer>();
             });
         }
     }
