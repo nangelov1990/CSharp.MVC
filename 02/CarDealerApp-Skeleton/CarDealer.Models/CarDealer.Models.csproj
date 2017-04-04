@@ -56,6 +56,7 @@
     <Compile Include="ViewModels\AboutCarVm.cs" />
     <Compile Include="ViewModels\AddPartSupplierVm.cs" />
     <Compile Include="ViewModels\AllPartVm.cs" />
+    <Compile Include="ViewModels\DeletePartVm.cs" />
     <Compile Include="ViewModels\EditCmrVm.cs" />
     <Compile Include="ViewModels\EditPartVm.cs" />
     <Compile Include="ViewModels\SaleVm.cs" />

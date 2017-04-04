@@ -56,6 +56,17 @@ namespace CarDealerApp.Controllers
         }
 
         [HttpGet]
+        [Route("delete/{id:int}")]
+        // GET: Delete Part
+        public ActionResult Delete(int id)
+        {
+            DeletePartVm viewModel =
+                this.service.DeletePartView(id);
+
+            return this.View(viewModel);
+        }
+
+        [HttpGet]
         [Route("edit/{id:int}")]
         // GET: Edit Part
         public ActionResult Edit(int id)

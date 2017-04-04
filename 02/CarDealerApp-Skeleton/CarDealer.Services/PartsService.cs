@@ -47,6 +47,20 @@
             this.Context.SaveChanges();
         }
 
+        public DeletePartVm DeletePartView(int id)
+        {
+            Part part = this.Context.Parts.Find(id);
+            DeletePartVm partVm =
+                Mapper.Instance.Map<Part, DeletePartVm>(part);
+
+            return partVm;
+        }
+
+        public void DeletePart(int id)
+        {
+            
+        }
+
         public EditPartVm ViewEditPart(int id)
         {
             Part part = this.Context.Parts.Find(id);

@@ -41,6 +41,7 @@
                 expression.CreateMap<CmrBm, Customer>();
                 expression.CreateMap<Part, AllPartVm>();
                 expression.CreateMap<Supplier, AddPartSupplierVm>();
+                expression.CreateMap<Part, DeletePartVm>();
                 expression.CreateMap<Part, EditPartVm>();
             });
         }
