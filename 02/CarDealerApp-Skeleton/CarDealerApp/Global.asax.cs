@@ -39,6 +39,9 @@
                         configExpression =>
                         configExpression.MapFrom(s => s.Car.Parts.Sum(p => p.Price)));
                 expression.CreateMap<CmrBm, Customer>();
+                expression.CreateMap<Part, AllPartVm>();
+                expression.CreateMap<Supplier, AddPartSupplierVm>();
+                expression.CreateMap<Part, EditPartVm>();
             });
         }
     }
