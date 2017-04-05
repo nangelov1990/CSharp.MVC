@@ -66,6 +66,21 @@ namespace CarDealerApp.Controllers
             return this.View(viewModel);
         }
 
+        [HttpPost]
+        [Route("delete/{id:int}")]
+        // POST: Delete Part
+        public ActionResult Delete([Bind(Include = "Id")] DeletePartBm bind)
+        {
+            if (this.ModelState.IsValid)
+            {
+                this.service.DeletePart(bind.Id);
+
+                return this.Redirect("/parts");
+            }
+
+            return this.View();
+        }
+
         [HttpGet]
         [Route("edit/{id:int}")]
         // GET: Edit Part
@@ -75,6 +90,21 @@ namespace CarDealerApp.Controllers
                 this.service.ViewEditPart(id);
 
             return this.View(viewModel);
+        }
+
+        [HttpPost]
+        [Route("edit/{id:int}")]
+        // POST: Edit Part
+        public ActionResult Edit([Bind(Include = "Id,Name,Price")] EditPartBm bind)
+        {
+            if (this.ModelState.IsValid)
+            {
+                this.service.EditPart(bind);
+
+                return this.Redirect("/parts");
+            }
+
+            return this.View();
         }
     }
 }

@@ -45,7 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BindingModels\CmrBm.cs" />
+    <Compile Include="BindingModels\DeletePartBm.cs" />
     <Compile Include="BindingModels\EditCmrBm.cs" />
+    <Compile Include="BindingModels\EditPartBm.cs" />
     <Compile Include="BindingModels\PartBm.cs" />
     <Compile Include="EntityModels\Car.cs" />
     <Compile Include="EntityModels\Customer.cs" />

@@ -58,7 +58,9 @@
 
         public void DeletePart(int id)
         {
-            
+            Part part = this.Context.Parts.Find(id);
+            this.Context.Parts.Remove(part);
+            this.Context.SaveChanges();
         }
 
         public EditPartVm ViewEditPart(int id)
@@ -68,6 +70,15 @@
                 Mapper.Instance.Map<Part, EditPartVm>(part);
 
             return partVm;
+        }
+
+        public void EditPart(EditPartBm bind)
+        {
+            Part part = this.Context.Parts.Find(bind.Id);
+            part.Name = bind.Name;
+            part.Price = bind.Price;
+
+            this.Context.SaveChanges();
         }
     }
 }

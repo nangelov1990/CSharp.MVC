@@ -42,7 +42,9 @@
                 expression.CreateMap<Part, AllPartVm>();
                 expression.CreateMap<Supplier, AddPartSupplierVm>();
                 expression.CreateMap<Part, DeletePartVm>();
+                expression.CreateMap<DeletePartBm, Part>();
                 expression.CreateMap<Part, EditPartVm>();
+                expression.CreateMap<EditPartBm, Part>();
             });
         }
     }
