@@ -5,6 +5,7 @@
 }
 
 <h2>All</h2>
+<a href="/cars/add">Add</a>
 
 <table class="table table-striped">
     <tr>
@@ -17,7 +18,10 @@
     <tr>
         <td>@item.Make</td>
         <td>@item.Model</td>
-        <td>@item.TravelledDistance</td>
+        <td>@item.TravelledDistance km</td>
+        <td>
+            <a href="/cars/@item.Id/parts">Parts</a>
+        </td>
     </tr>
 }
 </table>

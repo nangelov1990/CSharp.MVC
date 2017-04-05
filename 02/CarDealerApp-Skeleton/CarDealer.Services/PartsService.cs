@@ -75,7 +75,7 @@
         public void EditPart(EditPartBm bind)
         {
             Part part = this.Context.Parts.Find(bind.Id);
-            part.Name = bind.Name;
+            part.Quantity = bind.Quantity;
             part.Price = bind.Price;
 
             this.Context.SaveChanges();

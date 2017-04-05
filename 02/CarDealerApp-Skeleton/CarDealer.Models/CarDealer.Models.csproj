@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingModels\AddCarBm.cs" />
     <Compile Include="BindingModels\CmrBm.cs" />
     <Compile Include="BindingModels\DeletePartBm.cs" />
     <Compile Include="BindingModels\EditCmrBm.cs" />

@@ -2,10 +2,12 @@
 {
     using System.Collections.Generic;
     using System.Web.Mvc;
+    using CarDealer.Models.BindingModels;
     using CarDealer.Models.ViewModels;
     using CarDealer.Services;
 
     [RoutePrefix("cars")]
+    [Route("all")]
     public class CarsController : Controller
     {
         private CarsService service;
@@ -35,6 +37,28 @@
                 this.service.GetCarWithParts(id);
 
             return this.View(viewModels);
+        }
+
+        [HttpGet]
+        [Route("add")]
+        // GET: Add Car
+        public ActionResult Add()
+        {
+            return this.View();
+        }
+
+        [HttpPost]
+        [Route("add")]
+        // POST: Add Car
+        public ActionResult Add([Bind(Include = "Make,Model,TravelledDistance,PartIds")] AddCarBm bind)
+        {
+            if (this.ModelState.IsValid)
+            {
+                this.service.AddCar(bind);
+
+                return this.Redirect("/cars");
+            }
+            return this.View();
         }
     }
 }

@@ -4,7 +4,7 @@
     using System.Linq;
 
     using AutoMapper;
-
+    using Models.BindingModels;
     using Models.EntityModels;
     using Models.ViewModels;
 
@@ -48,6 +48,24 @@
             };
 
             return viewModel;
+        }
+
+        public void AddCar(AddCarBm bind)
+        {
+            Car car =
+                Mapper.Instance.Map<AddCarBm, Car>(bind);
+            int[] partIds = bind.PartIds.Split(' ').Select(int.Parse).ToArray();
+            foreach (var partId in partIds)
+            {
+                Part part = this.Context.Parts.Find(partId);
+                if (part != null)
+                {
+                    car.Parts.Add(part);
+                }
+            }
+
+            this.Context.Cars.Add(car);
+            this.Context.SaveChanges();
         }
     }
 }
