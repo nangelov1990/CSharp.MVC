@@ -5,8 +5,11 @@
     using AutoMapper;
 
     using Models.BindingModels;
+    using Models.BindingModels.Parts;
     using Models.EntityModels;
     using Models.ViewModels;
+    using Models.ViewModels.Parts;
+    using Models.ViewModels.Suppliers;
 
     public class PartsService : Service
     {

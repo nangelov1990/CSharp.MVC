@@ -5,7 +5,10 @@ namespace CarDealerApp.Controllers
     using System.Web.Mvc;
 
     using CarDealer.Models.BindingModels;
+    using CarDealer.Models.BindingModels.Parts;
     using CarDealer.Models.ViewModels;
+    using CarDealer.Models.ViewModels.Parts;
+    using CarDealer.Models.ViewModels.Suppliers;
     using CarDealer.Services;
 
     [RoutePrefix("parts")]

@@ -2,12 +2,15 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Data.Entity;
     using System.Linq;
 
     using AutoMapper;
     using Models.BindingModels;
+    using Models.BindingModels.Customers;
     using Models.EntityModels;
     using Models.ViewModels;
+    using Models.ViewModels.Customers;
 
     public class CustomerService : Service
     {
@@ -98,6 +101,7 @@
 
             cmr.Name = bind.Name;
             cmr.BirthDate = bind.BirthDate;
+            this.Context.Entry(cmr).State = EntityState.Modified;
             this.Context.SaveChanges();
         }
     }

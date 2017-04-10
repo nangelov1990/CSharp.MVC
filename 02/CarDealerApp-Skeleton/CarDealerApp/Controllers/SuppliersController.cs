@@ -3,6 +3,7 @@
     using System.Collections.Generic;
     using System.Web.Mvc;
     using CarDealer.Models.ViewModels;
+    using CarDealer.Models.ViewModels.Suppliers;
     using CarDealer.Services;
 
     [RoutePrefix("suppliers")]

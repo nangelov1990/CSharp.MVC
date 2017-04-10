@@ -3,7 +3,9 @@
     using System.Collections.Generic;
     using System.Web.Mvc;
     using CarDealer.Models.BindingModels;
+    using CarDealer.Models.BindingModels.Cars;
     using CarDealer.Models.ViewModels;
+    using CarDealer.Models.ViewModels.Cars;
     using CarDealer.Services;
 
     [RoutePrefix("cars")]

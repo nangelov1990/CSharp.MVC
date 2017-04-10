@@ -2,10 +2,7 @@ using CarDealer.Models.EntityModels;
 
 namespace CarDealer.Data
 {
-    using Models;
-    using System;
     using System.Data.Entity;
-    using System.Linq;
 
     public class CarDealerContext : DbContext
     {
@@ -21,6 +18,8 @@ namespace CarDealer.Data
         public virtual DbSet<Supplier> Suppliers { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Sale> Sales { get; set; }
+        public virtual DbSet<Login> Logins { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 
 }

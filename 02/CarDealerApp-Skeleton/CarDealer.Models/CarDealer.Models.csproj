@@ -44,31 +44,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BindingModels\AddCarBm.cs" />
-    <Compile Include="BindingModels\CmrBm.cs" />
-    <Compile Include="BindingModels\DeletePartBm.cs" />
-    <Compile Include="BindingModels\EditCmrBm.cs" />
-    <Compile Include="BindingModels\EditPartBm.cs" />
-    <Compile Include="BindingModels\PartBm.cs" />
+    <Compile Include="BindingModels\Cars\AddCarBm.cs" />
+    <Compile Include="BindingModels\Customers\CmrBm.cs" />
+    <Compile Include="BindingModels\Parts\DeletePartBm.cs" />
+    <Compile Include="BindingModels\Customers\EditCmrBm.cs" />
+    <Compile Include="BindingModels\Parts\EditPartBm.cs" />
+    <Compile Include="BindingModels\Parts\PartBm.cs" />
+    <Compile Include="BindingModels\Users\RegUserBm.cs" />
     <Compile Include="EntityModels\Car.cs" />
     <Compile Include="EntityModels\Customer.cs" />
+    <Compile Include="EntityModels\Login.cs" />
     <Compile Include="EntityModels\Part.cs" />
+    <Compile Include="EntityModels\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EntityModels\Sale.cs" />
     <Compile Include="EntityModels\Supplier.cs" />
-    <Compile Include="ViewModels\AboutCarVm.cs" />
-    <Compile Include="ViewModels\AddPartSupplierVm.cs" />
-    <Compile Include="ViewModels\AllPartVm.cs" />
-    <Compile Include="ViewModels\DeletePartVm.cs" />
-    <Compile Include="ViewModels\EditCmrVm.cs" />
-    <Compile Include="ViewModels\EditPartVm.cs" />
-    <Compile Include="ViewModels\SaleVm.cs" />
-    <Compile Include="ViewModels\CarVm.cs" />
-    <Compile Include="ViewModels\AllCmrVm.cs" />
-    <Compile Include="ViewModels\AllSuppliersVm.cs" />
-    <Compile Include="ViewModels\AllCarsByMakeVm.cs" />
-    <Compile Include="ViewModels\CmrVm.cs" />
-    <Compile Include="ViewModels\PartVm.cs" />
+    <Compile Include="ViewModels\Cars\AboutCarVm.cs" />
+    <Compile Include="ViewModels\Suppliers\AddPartSupplierVm.cs" />
+    <Compile Include="ViewModels\Parts\AllPartVm.cs" />
+    <Compile Include="ViewModels\Parts\DeletePartVm.cs" />
+    <Compile Include="ViewModels\Customers\EditCmrVm.cs" />
+    <Compile Include="ViewModels\Parts\EditPartVm.cs" />
+    <Compile Include="ViewModels\Sales\SaleVm.cs" />
+    <Compile Include="ViewModels\Cars\CarVm.cs" />
+    <Compile Include="ViewModels\Customers\AllCmrVm.cs" />
+    <Compile Include="ViewModels\Suppliers\AllSuppliersVm.cs" />
+    <Compile Include="ViewModels\Cars\AllCarsByMakeVm.cs" />
+    <Compile Include="ViewModels\Customers\CmrVm.cs" />
+    <Compile Include="ViewModels\Parts\PartVm.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

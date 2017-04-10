@@ -4,6 +4,7 @@
     using System.Web.Mvc;
 
     using CarDealer.Models.ViewModels;
+    using CarDealer.Models.ViewModels.Sales;
     using CarDealer.Services;
 
     [RoutePrefix("sales")]

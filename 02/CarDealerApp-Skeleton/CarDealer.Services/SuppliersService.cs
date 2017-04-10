@@ -8,6 +8,7 @@
 
     using Models.EntityModels;
     using Models.ViewModels;
+    using Models.ViewModels.Suppliers;
 
     public class SuppliersService : Service
     {

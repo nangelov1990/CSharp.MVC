@@ -6,9 +6,15 @@
     using System.Web.Routing;
 
     using AutoMapper;
-    using CarDealer.Models.BindingModels;
+    using CarDealer.Models.BindingModels.Cars;
+    using CarDealer.Models.BindingModels.Customers;
+    using CarDealer.Models.BindingModels.Users;
     using CarDealer.Models.EntityModels;
-    using CarDealer.Models.ViewModels;
+    using CarDealer.Models.ViewModels.Cars;
+    using CarDealer.Models.ViewModels.Customers;
+    using CarDealer.Models.ViewModels.Parts;
+    using CarDealer.Models.ViewModels.Sales;
+    using CarDealer.Models.ViewModels.Suppliers;
 
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -44,6 +50,7 @@
                 expression.CreateMap<Part, DeletePartVm>();
                 expression.CreateMap<Part, EditPartVm>();
                 expression.CreateMap<AddCarBm, Car>();
+                expression.CreateMap<RegUserBm, User>();
             });
         }
     }
