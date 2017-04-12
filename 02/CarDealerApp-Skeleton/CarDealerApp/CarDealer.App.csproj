@@ -192,6 +192,7 @@
     <Content Include="Views\Parts\Delete.cshtml" />
     <Content Include="Views\Cars\Add.cshtml" />
     <Content Include="Views\Users\Register.cshtml" />
+    <Content Include="Views\Users\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

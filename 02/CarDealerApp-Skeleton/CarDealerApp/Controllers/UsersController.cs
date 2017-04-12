@@ -1,5 +1,6 @@
 ﻿namespace CarDealerApp.Controllers
 {
+    using System.Web;
     using System.Web.Mvc;
 
     using CarDealer.Models.BindingModels.Users;
@@ -21,15 +22,13 @@
         // GET: Register User
         public ActionResult Register()
         {
-            var httpCookie = this.Request.Cookies.Get("sessionId");
-            var cookieExist = httpCookie != null;
-            var loggedUser = AuthenticationManager.IsAuthenticated(httpCookie.Value);
-
-            if (cookieExist &&
-                loggedUser)
-            {
-                this.RedirectToAction("All", "Cars");
-            }
+            // var httpCookie = this.Request.Cookies.Get("sessionId");
+            // if (httpCookie != null &&
+            //     AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            // {
+            //     this.RedirectToAction("All", "Cars");
+            // }
+            return this.SessionExist();
 
             return View();
         }
@@ -37,26 +36,92 @@
         [HttpPost]
         [Route("register/")]
         // GET: Register User
-        public ActionResult Register([Bind(Include="Username,Email,Password,ConfirmPassword")] RegUserBm bind)
+        public ActionResult Register([Bind(Include = "Username,Email,Password,ConfirmPassword")] RegUserBm bind)
         {
-            var httpCookie = this.Request.Cookies.Get("sessionId");
-            var cookieExist = httpCookie != null;
-            var loggedUser = AuthenticationManager.IsAuthenticated(httpCookie.Value);
-            if (cookieExist &&
-                loggedUser)
-            {
-                this.RedirectToAction("All", "Cars");
-            }
+//            var httpCookie = this.Request.Cookies.Get("sessionId");
+//            if (httpCookie != null &&
+//                AuthenticationManager.IsAuthenticated(httpCookie.Value))
+//            {
+//                return this.RedirectToAction("All", "Cars");
+//            }
+            this.SessionExist();
 
             var passwordMatch = bind.Password == bind.ConfirmPassword;
             if (this.ModelState.IsValid &&
                 passwordMatch)
             {
                 this.service.AddUser(bind);
-                this.RedirectToAction("All", "Cars");
+                return this.RedirectToAction("Login");
             }
 
             return this.RedirectToAction("Register");
+        }
+
+        [HttpGet]
+        [Route("login/")]
+        public ActionResult Login()
+        {
+//            var httpCookie = this.Request.Cookies.Get("sessionId");
+//            if (httpCookie != null &&
+//                AuthenticationManager.IsAuthenticated(httpCookie.Value))
+//            {
+//                return this.RedirectToAction("All", "Cars");
+//            }
+            return this.SessionExist();
+
+            return this.View();
+        }
+
+        [HttpPost]
+        [Route("login/")]
+        public ActionResult Login([Bind(Include = "Username,Password")] LogUserBm bind)
+        {
+            this.SessionExist();
+
+            var validModelState = this.ModelState.IsValid;
+            var userExists = this.service.UserExists(bind);
+            if (validModelState &&
+                userExists)
+            {
+                var sessionId = Session.SessionID;
+                var cookie = new HttpCookie("sessionId", sessionId);
+
+                this.service.LoginUser(bind, sessionId);
+                this.Response.SetCookie(cookie);
+
+                return this.RedirectToAction("All", "Cars");
+            }
+
+            return this.RedirectToAction("Login");
+        }
+
+        [HttpPost]
+        [Route("logout/")]
+        public ActionResult Logout()
+        {
+            var httpCookie = this.Request.Cookies.Get("sessionId");
+            if (httpCookie == null &&
+                !AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("Login");
+            }
+
+            var sessionId = Request.Cookies.Get("sessionId").Value;
+            AuthenticationManager.Logout(sessionId);
+
+            return this.RedirectToAction("All", "Cars");
+        }
+
+        private ActionResult SessionExist()
+        {
+            var httpCookie = this.Request.Cookies.Get("sessionId");
+            if (httpCookie != null &&
+                AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("All", "Cars");
+            }
+
+            return null;
         }
     }
 }

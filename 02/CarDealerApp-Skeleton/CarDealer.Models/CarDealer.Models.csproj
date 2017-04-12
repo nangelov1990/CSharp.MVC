@@ -50,6 +50,7 @@
     <Compile Include="BindingModels\Customers\EditCmrBm.cs" />
     <Compile Include="BindingModels\Parts\EditPartBm.cs" />
     <Compile Include="BindingModels\Parts\PartBm.cs" />
+    <Compile Include="BindingModels\Users\LogUserBm.cs" />
     <Compile Include="BindingModels\Users\RegUserBm.cs" />
     <Compile Include="EntityModels\Car.cs" />
     <Compile Include="EntityModels\Customer.cs" />

@@ -1,7 +1,9 @@
 ﻿namespace CarDealerApp.Security
 {
     using System.Linq;
+
     using CarDealer.Data;
+    using CarDealer.Models.EntityModels;
 
     public class AuthenticationManager
     {
@@ -15,6 +17,14 @@
             }
 
             return false;
+        }
+
+        public static void Logout(string sessionId)
+        {
+            Login login = context.Logins
+                .FirstOrDefault(l => l.SessionId == sessionId);
+            login.IsActive = false;
+            context.SaveChanges();
         }
     }
 }
