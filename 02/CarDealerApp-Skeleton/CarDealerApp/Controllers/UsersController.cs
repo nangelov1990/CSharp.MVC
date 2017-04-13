@@ -22,13 +22,12 @@
         // GET: Register User
         public ActionResult Register()
         {
-            // var httpCookie = this.Request.Cookies.Get("sessionId");
-            // if (httpCookie != null &&
-            //     AuthenticationManager.IsAuthenticated(httpCookie.Value))
-            // {
-            //     this.RedirectToAction("All", "Cars");
-            // }
-            return this.SessionExist();
+            var httpCookie = this.Request.Cookies.Get("sessionId");
+            if (httpCookie != null &&
+                AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("All", "Cars");
+            }
 
             return View();
         }
@@ -38,13 +37,12 @@
         // GET: Register User
         public ActionResult Register([Bind(Include = "Username,Email,Password,ConfirmPassword")] RegUserBm bind)
         {
-//            var httpCookie = this.Request.Cookies.Get("sessionId");
-//            if (httpCookie != null &&
-//                AuthenticationManager.IsAuthenticated(httpCookie.Value))
-//            {
-//                return this.RedirectToAction("All", "Cars");
-//            }
-            this.SessionExist();
+            var httpCookie = this.Request.Cookies.Get("sessionId");
+            if (httpCookie != null &&
+                AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("All", "Cars");
+            }
 
             var passwordMatch = bind.Password == bind.ConfirmPassword;
             if (this.ModelState.IsValid &&
@@ -61,13 +59,12 @@
         [Route("login/")]
         public ActionResult Login()
         {
-//            var httpCookie = this.Request.Cookies.Get("sessionId");
-//            if (httpCookie != null &&
-//                AuthenticationManager.IsAuthenticated(httpCookie.Value))
-//            {
-//                return this.RedirectToAction("All", "Cars");
-//            }
-            return this.SessionExist();
+            var httpCookie = this.Request.Cookies.Get("sessionId");
+            if (httpCookie != null &&
+                AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("All", "Cars");
+            }
 
             return this.View();
         }
@@ -76,7 +73,12 @@
         [Route("login/")]
         public ActionResult Login([Bind(Include = "Username,Password")] LogUserBm bind)
         {
-            this.SessionExist();
+            var httpCookie = this.Request.Cookies.Get("sessionId");
+            if (httpCookie != null &&
+                AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("All", "Cars");
+            }
 
             var validModelState = this.ModelState.IsValid;
             var userExists = this.service.UserExists(bind);
@@ -88,6 +90,7 @@
 
                 this.service.LoginUser(bind, sessionId);
                 this.Response.SetCookie(cookie);
+                ViewBag.Username = bind.Username;
 
                 return this.RedirectToAction("All", "Cars");
             }
@@ -100,7 +103,7 @@
         public ActionResult Logout()
         {
             var httpCookie = this.Request.Cookies.Get("sessionId");
-            if (httpCookie == null &&
+            if (httpCookie == null ||
                 !AuthenticationManager.IsAuthenticated(httpCookie.Value))
             {
                 return this.RedirectToAction("Login");
@@ -108,20 +111,9 @@
 
             var sessionId = Request.Cookies.Get("sessionId").Value;
             AuthenticationManager.Logout(sessionId);
+            ViewBag.Username = null;
 
             return this.RedirectToAction("All", "Cars");
-        }
-
-        private ActionResult SessionExist()
-        {
-            var httpCookie = this.Request.Cookies.Get("sessionId");
-            if (httpCookie != null &&
-                AuthenticationManager.IsAuthenticated(httpCookie.Value))
-            {
-                return this.RedirectToAction("All", "Cars");
-            }
-
-            return null;
         }
     }
 }
