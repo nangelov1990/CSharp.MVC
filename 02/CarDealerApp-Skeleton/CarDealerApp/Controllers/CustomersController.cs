@@ -3,16 +3,14 @@
     using System.Collections.Generic;
     using System.Web.Mvc;
 
-    using CarDealer.Models.BindingModels;
     using CarDealer.Models.BindingModels.Customers;
-    using CarDealer.Models.ViewModels;
     using CarDealer.Models.ViewModels.Customers;
     using CarDealer.Services;
 
     [RoutePrefix("customers")]
-    public class CustomersController : Controller
+    public class CustomersController : CarDealerController
     {
-        private CustomerService service;
+        private new CustomerService service;
 
         public CustomersController()
         {
@@ -27,6 +25,8 @@
             IEnumerable<AllCmrVm> viewModel =
                 this.service.GetAllOrderedCustomers(order);
 
+            this.GetUsernameOfLoggedUser();
+
             return this.View(viewModel);
         }
 
@@ -37,6 +37,8 @@
             CmrVm viewModel =
                 this.service.GetCmrDetails(id);
 
+            this.GetUsernameOfLoggedUser();
+
             return this.View(viewModel);
         }
 
@@ -44,6 +46,8 @@
         [Route("add")]
         public ActionResult Add()
         {
+            this.GetUsernameOfLoggedUser();
+
             return this.View();
         }
 
@@ -57,7 +61,7 @@
 
                 return this.RedirectToAction("All", new {order = "ascending"});
             }
-
+            
             return this.View();
         }
 
@@ -67,6 +71,8 @@
         {
             EditCmrVm viewModel =
                 this.service.ViewEditCmr(id);
+
+            this.GetUsernameOfLoggedUser();
 
             return this.View(viewModel);
         }

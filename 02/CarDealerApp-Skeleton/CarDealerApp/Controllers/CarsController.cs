@@ -1,18 +1,19 @@
-﻿namespace CarDealerApp.Controllers
+﻿using CarDealerApp.Security;
+
+namespace CarDealerApp.Controllers
 {
     using System.Collections.Generic;
     using System.Web.Mvc;
-    using CarDealer.Models.BindingModels;
+
     using CarDealer.Models.BindingModels.Cars;
-    using CarDealer.Models.ViewModels;
     using CarDealer.Models.ViewModels.Cars;
     using CarDealer.Services;
 
     [RoutePrefix("cars")]
     [Route("all")]
-    public class CarsController : Controller
+    public class CarsController : CarDealerController
     {
-        private CarsService service;
+        private new CarsService service;
 
         public CarsController()
         {
@@ -26,6 +27,7 @@
         {
             IEnumerable<AllCarsByMakeVm> viewModels =
                 this.service.GetCarsByMake(make);
+            this.GetUsernameOfLoggedUser();
 
             return View(viewModels);
         }
@@ -37,6 +39,7 @@
         {
             AboutCarVm viewModels =
                 this.service.GetCarWithParts(id);
+            this.GetUsernameOfLoggedUser();
 
             return this.View(viewModels);
         }
@@ -46,6 +49,16 @@
         // GET: Add Car
         public ActionResult Add()
         {
+            // Only logged users can add cars
+            var httpCookie = Request.Cookies.Get("sessionId");
+            if (httpCookie == null ||
+                !AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
+            this.GetUsernameOfLoggedUser();
+
             return this.View();
         }
 
@@ -54,12 +67,20 @@
         // POST: Add Car
         public ActionResult Add([Bind(Include = "Make,Model,TravelledDistance,PartIds")] AddCarBm bind)
         {
+            // Only logged users car add cars
+            var httpCookie = Request.Cookies.Get("sessionId");
+            if (httpCookie == null &&
+                !AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
             if (this.ModelState.IsValid)
             {
-                this.service.AddCar(bind);
-
+                this.GetUsernameOfLoggedUser();
                 return this.Redirect("/cars");
             }
+
             return this.View();
         }
     }

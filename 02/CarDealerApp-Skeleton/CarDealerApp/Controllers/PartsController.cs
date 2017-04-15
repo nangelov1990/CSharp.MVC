@@ -4,17 +4,15 @@ namespace CarDealerApp.Controllers
     using System.Collections.Generic;
     using System.Web.Mvc;
 
-    using CarDealer.Models.BindingModels;
     using CarDealer.Models.BindingModels.Parts;
-    using CarDealer.Models.ViewModels;
     using CarDealer.Models.ViewModels.Parts;
     using CarDealer.Models.ViewModels.Suppliers;
     using CarDealer.Services;
 
     [RoutePrefix("parts")]
-    public class PartsController : Controller
+    public class PartsController : CarDealerController
     {
-        private PartsService service;
+        private new PartsService service;
 
         public PartsController()
         {
@@ -29,6 +27,8 @@ namespace CarDealerApp.Controllers
             IEnumerable<AllPartVm> viewModels =
                 this.service.AllParts();
 
+            this.GetUsernameOfLoggedUser();
+
             return this.View(viewModels);
         }
 
@@ -39,6 +39,8 @@ namespace CarDealerApp.Controllers
         {
             IEnumerable<AddPartSupplierVm> viewModels =
                 this.service.LoadSuppliers();
+
+            this.GetUsernameOfLoggedUser();
 
             return View(viewModels);
         }
@@ -92,6 +94,8 @@ namespace CarDealerApp.Controllers
             EditPartVm viewModel =
                 this.service.ViewEditPart(id);
 
+            this.GetUsernameOfLoggedUser();
+
             return this.View(viewModel);
         }
 
@@ -106,7 +110,7 @@ namespace CarDealerApp.Controllers
 
                 return this.Redirect("/parts");
             }
-
+            
             return this.View();
         }
     }

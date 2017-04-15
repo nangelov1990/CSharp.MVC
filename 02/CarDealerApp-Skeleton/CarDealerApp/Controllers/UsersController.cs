@@ -8,9 +8,9 @@
     using Security;
 
     [RoutePrefix("users")]
-    public class UsersController : Controller
+    public class UsersController : CarDealerController
     {
-        private UserService service;
+        private new UserService service;
 
         public UsersController()
         {
@@ -28,6 +28,8 @@
             {
                 return this.RedirectToAction("All", "Cars");
             }
+
+            this.GetUsernameOfLoggedUser();
 
             return View();
         }
@@ -65,6 +67,8 @@
             {
                 return this.RedirectToAction("All", "Cars");
             }
+
+            this.GetUsernameOfLoggedUser();
 
             return this.View();
         }
@@ -111,7 +115,6 @@
 
             var sessionId = Request.Cookies.Get("sessionId").Value;
             AuthenticationManager.Logout(sessionId);
-            ViewBag.Username = null;
 
             return this.RedirectToAction("All", "Cars");
         }

@@ -2,14 +2,14 @@
 {
     using System.Collections.Generic;
     using System.Web.Mvc;
-    using CarDealer.Models.ViewModels;
+
     using CarDealer.Models.ViewModels.Suppliers;
     using CarDealer.Services;
 
     [RoutePrefix("suppliers")]
-    public class SuppliersController : Controller
+    public class SuppliersController : CarDealerController
     {
-        private SuppliersService service;
+        private new SuppliersService service;
 
         public SuppliersController()
         {
@@ -23,6 +23,8 @@
         {
             IEnumerable<AllSuppliersVm> viewModels =
                 this.service.GetAllSuppliersByType(type);
+
+            this.GetUsernameOfLoggedUser();
 
             return View(viewModels);
         }

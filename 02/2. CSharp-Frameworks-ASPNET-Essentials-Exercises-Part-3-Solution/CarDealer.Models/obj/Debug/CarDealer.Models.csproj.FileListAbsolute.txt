@@ -5,3 +5,10 @@ E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essen
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-3-Solution\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-3-Solution\CarDealer.Models\obj\Debug\CarDealer.Models.dll
 E:\Code.Proj\SU.Proj\SE\Prof.Mod\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-3-Solution\CarDealer.Models\obj\Debug\CarDealer.Models.pdb
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-3-Solution\CarDealer.Models\bin\Debug\CarDealer.Models.dll
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-3-Solution\CarDealer.Models\bin\Debug\CarDealer.Models.pdb
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-3-Solution\CarDealer.Models\bin\Debug\AutoMapper.dll
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-3-Solution\CarDealer.Models\bin\Debug\AutoMapper.xml
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-3-Solution\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-3-Solution\CarDealer.Models\obj\Debug\CarDealer.Models.dll
+F:\Projects\SU\CSharp.MVC\02\2. CSharp-Frameworks-ASPNET-Essentials-Exercises-Part-3-Solution\CarDealer.Models\obj\Debug\CarDealer.Models.pdb

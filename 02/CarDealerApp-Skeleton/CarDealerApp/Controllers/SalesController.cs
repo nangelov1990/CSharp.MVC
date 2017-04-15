@@ -2,15 +2,14 @@
 {
     using System.Collections.Generic;
     using System.Web.Mvc;
-
-    using CarDealer.Models.ViewModels;
+    
     using CarDealer.Models.ViewModels.Sales;
     using CarDealer.Services;
 
     [RoutePrefix("sales")]
-    public class SalesController : Controller
+    public class SalesController : CarDealerController
     {
-        private SalesService service;
+        private new SalesService service;
 
         public SalesController()
         {
@@ -25,6 +24,8 @@
             IEnumerable<SaleVm> viewModels =
                 this.service.GetAllSales();
 
+            this.GetUsernameOfLoggedUser();
+
             return View(viewModels);
         }
 
@@ -36,6 +37,8 @@
             SaleVm viewModel =
                 this.service.GetSale(id);
 
+            this.GetUsernameOfLoggedUser();
+
             return View(viewModel);
         }
 
@@ -46,6 +49,8 @@
         {
             IEnumerable<SaleVm> viewModels =
                 this.service.GetDiscountedSales(percent);
+
+            this.GetUsernameOfLoggedUser();
 
             return View(viewModels);
         }
