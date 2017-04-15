@@ -1,0 +1,53 @@
+﻿@model CarDealer.Models.ViewModels.Sales.AddSaleReviewVm
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Confirm</h2>
+
+<h4>Sale</h4>
+
+<div class="form-horizontal">
+	<form action="/sales/add/" method="POST">
+		<div class="form-group">
+			<div class="col-md-10">
+				<label for="customer" class="control-label col-md-2">Customer: </label>
+				<input type="text" id="customer" class="form-control" value="@Model.Customer.Name" disabled>
+				<input type="text" hidden name="customerId" value="@Model.Customer.Id">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-10">
+				<label for="car" class="control-label col-md-2">Car: </label>
+				<input type="text" id="car" class="form-control" value="@Model.Car.Make @Model.Car.Model" disabled>
+				<input type="text" hidden name="carId" value="@Model.Car.Id">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-10">
+				<label for="discount" class="control-label col-md-2">Discount: </label>
+				<input type="text" id="discount" class="form-control" value="@Model.DiscountString" readonly>
+				<input type="text" hidden name="discount" value="@Model.Discount">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-10">
+				<label for="carPrice" class="control-label col-md-2">Car Price: </label>
+				<input type="text" id="carPrice" class="form-control" value="@Model.CarPrice" readonly>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-10">
+				<label for="finalCarPrice" class="control-label col-md-2">Final Car Price: </label>
+				<input type="text" id="price" class="form-control" value="@Model.FinalCarPrice" readonly>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<a class="btn btn-default" href="/cars/">Cancel</a>
+				<input type="submit" class="btn btn-primary" value="Finalize" />
+			</div>
+		</div>
+	</form>
+</div>

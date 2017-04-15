@@ -1,0 +1,30 @@
+@{
+	ViewBag.Title = "Add Supplier";
+}
+
+<h2>Add</h2>
+
+<h4>Supplier</h4>
+
+<hr />
+
+<div class="form-horizontal">
+	<form method="POST">
+		<div class="form-group">
+			<label for="name" class="control-label col-md-2">Name: </label>
+			<input type="text" id="name" class="form-control" name="name" required>
+		</div>
+		<div class="form-group">
+			<label for="type" class="control-label col-md-2">Type: </label>
+			<select name="type" id="type" class="form-control">
+				<option value="false">Local</option>
+				<option value="true">Importer</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<input type="submit" class="btn btn-primary" value="Create">
+			</div>
+		</div>
+	</form>
+</div>

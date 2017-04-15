@@ -194,6 +194,11 @@
     <Content Include="Views\Cars\Add.cshtml" />
     <Content Include="Views\Users\Register.cshtml" />
     <Content Include="Views\Users\Login.cshtml" />
+    <Content Include="Views\Sales\Add.cshtml" />
+    <Content Include="Views\Sales\AddReview.cshtml" />
+    <Content Include="Views\Suppliers\Add.cshtml" />
+    <Content Include="Views\Suppliers\Edit.cshtml" />
+    <Content Include="Views\Suppliers\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

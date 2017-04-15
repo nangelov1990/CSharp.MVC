@@ -51,6 +51,9 @@
                 expression.CreateMap<Part, EditPartVm>();
                 expression.CreateMap<AddCarBm, Car>();
                 expression.CreateMap<RegUserBm, User>();
+                expression.CreateMap<Customer, AddSaleCustomerVm>();
+                expression.CreateMap<Car, AddSaleCarVm>();
+                expression.CreateMap<Supplier, SupplierVm>();
             });
         }
     }

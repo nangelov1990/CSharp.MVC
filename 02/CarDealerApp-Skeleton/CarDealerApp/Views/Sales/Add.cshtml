@@ -1,0 +1,44 @@
+﻿@model CarDealer.Models.ViewModels.Sales.AddSaleVm
+
+@{
+    ViewBag.Title = "Add Sale";
+}
+
+<h2>Add</h2>
+
+<h4>Sale</h4>
+
+<div class="form-horizontal">
+	<form action="/sales/add/review/" method="POST">
+		<div class="form-group">
+			<div class="col-md-10">
+				<label for="customerId" class="control-label col-md-2">Customer: </label>
+				@Html.DropDownList("customerId", Model.Customers.Select(c => new SelectListItem {
+					Value = c.Id.ToString(),
+					Text = c.Name
+				}), new { id = "supplierId", @class = "form-control" })
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-10">
+				<label for="car" class="control-label col-md-2">Car: </label>
+				@Html.DropDownList("carId", Model.Cars.Select(c => new SelectListItem
+				{
+				    Value = c.Id.ToString(),
+                    Text = $"{c.Make} {c.Model}"
+				}), new { id = "carId", @class = "form-control" })
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-10">
+				<label for="discount" class="control-label col-md-2">Discount: </label>
+				<input type="number" id="discount" class="form-control" name="discount" min="0" max="100">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<input type="submit" class="btn btn-primary" value="Submit" />
+			</div>
+		</div>
+	</form>
+</div>

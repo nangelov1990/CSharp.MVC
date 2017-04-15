@@ -50,6 +50,8 @@
     <Compile Include="BindingModels\Customers\EditCmrBm.cs" />
     <Compile Include="BindingModels\Parts\EditPartBm.cs" />
     <Compile Include="BindingModels\Parts\PartBm.cs" />
+    <Compile Include="BindingModels\Sales\AddSaleBm.cs" />
+    <Compile Include="BindingModels\Suppliers\SupplierBm.cs" />
     <Compile Include="BindingModels\Users\LogUserBm.cs" />
     <Compile Include="BindingModels\Users\RegUserBm.cs" />
     <Compile Include="EntityModels\Car.cs" />
@@ -61,6 +63,10 @@
     <Compile Include="EntityModels\Sale.cs" />
     <Compile Include="EntityModels\Supplier.cs" />
     <Compile Include="ViewModels\Cars\AboutCarVm.cs" />
+    <Compile Include="ViewModels\Cars\AddSaleCarVm.cs" />
+    <Compile Include="ViewModels\Customers\AddSaleCustomerVm.cs" />
+    <Compile Include="ViewModels\Sales\AddSaleReviewVm.cs" />
+    <Compile Include="ViewModels\Sales\AddSaleVm.cs" />
     <Compile Include="ViewModels\Suppliers\AddPartSupplierVm.cs" />
     <Compile Include="ViewModels\Parts\AllPartVm.cs" />
     <Compile Include="ViewModels\Parts\DeletePartVm.cs" />
@@ -73,6 +79,7 @@
     <Compile Include="ViewModels\Cars\AllCarsByMakeVm.cs" />
     <Compile Include="ViewModels\Customers\CmrVm.cs" />
     <Compile Include="ViewModels\Parts\PartVm.cs" />
+    <Compile Include="ViewModels\Suppliers\SupplierVm.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
