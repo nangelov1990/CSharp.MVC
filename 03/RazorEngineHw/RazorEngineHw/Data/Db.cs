@@ -12,19 +12,19 @@
                 Name = "John Doe",
                 Age = 40,
                 Email = "john@office.com",
-                IsSubscribed = true
+                Subscribed = true
             },
             new Person()
             {
                 Name = "John Doe Jr",
-                Email = "john@office.com"
+                Email = "johnjr@office.com"
             },
             new Person()
             {
                 Name = "Mickey Mouse",
                 Age = 20,
-                IsSubscribed = false
-            },
+                Subscribed = false
+            }
         };
     }
 }
