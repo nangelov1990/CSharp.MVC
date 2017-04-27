@@ -1,0 +1,7 @@
+﻿@model RazorExercise.Models.IndexVm
+@{
+    ViewBag.Title = Model.Title;
+    ViewBag.Message = Model.Message;
+}
+
+@Html.Partial("_PeopleTable", Model.People)

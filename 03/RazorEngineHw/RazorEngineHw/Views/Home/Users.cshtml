@@ -1,0 +1,42 @@
+﻿@model IEnumerable<RazorEngineHw.Models.Person>
+
+@{
+    ViewBag.Title = "View Users";
+}
+
+<h2>Users</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(person => person.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(person => person.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(person => person.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(person => person.IsSubscribed)
+        </th>
+    </tr>
+    @foreach (var person in Model)
+    {
+
+        <tr>
+            <td>
+                @Html.DisplayFor(persons => person.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(persons => person.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(persons => person.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(persons => person.IsSubscribed)
+            </td>
+        </tr>
+    }
+</table>

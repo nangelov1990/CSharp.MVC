@@ -9,3 +9,13 @@
 4/26/2017 2:24:47 PM - ::1 - Anonymous - Cars.Add
 4/26/2017 2:24:47 PM - ::1 - Anonymous - Users.Login
 4/26/2017 2:25:01 PM - ::1 - Anonymous - Cars.All
+4/27/2017 1:16:57 PM - ::1 - Anonymous - Cars.All
+4/27/2017 1:17:12 PM - ::1 - Anonymous - Suppliers.All
+4/27/2017 1:17:15 PM - ::1 - Anonymous - Suppliers.Add
+4/27/2017 1:17:15 PM - ::1 - Anonymous - Cars.All
+4/27/2017 1:17:17 PM - ::1 - Anonymous - Cars.Add
+4/27/2017 1:17:17 PM - ::1 - Anonymous - Users.Login
+4/27/2017 1:17:21 PM - ::1 - nangelov - Users.Login
+4/27/2017 1:17:21 PM - ::1 - nangelov - Cars.All
+4/27/2017 1:17:24 PM - ::1 - nangelov - Suppliers.All
+4/27/2017 1:17:26 PM - ::1 - nangelov - Suppliers.Add

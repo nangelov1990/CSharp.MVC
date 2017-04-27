@@ -1,0 +1,18 @@
+﻿@model RazorExercise.Models.AboutVm
+@{
+    ViewBag.Title = Model.Title;
+    ViewBag.Message = Model.Message;
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<h3>Number of users: @Model.NumberOfUsers</h3>
+
+@foreach (var link in Model.Resources)
+{
+    <a href="https://www.google.bg/?gws_rd=ssl#q=@link">@link</a>
+    <br />
+}
+
+<p>Use this area to provide additional information.</p>
+
+@Html.Partial("_PeopleTable", Model.People)
