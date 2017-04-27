@@ -1,4 +1,5 @@
-﻿@{
+﻿@using RazorEngineHw.Helpers
+@{
     ViewBag.Title = "Contact";
 }
 <h2>@ViewBag.Title.</h2>
@@ -15,3 +16,9 @@
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
 </address>
+
+@Html.Image(
+    "https://scontent-otp1-1.xx.fbcdn.net/v/t1.0-9/18056937_10213283636351733_1618443749893891996_n.jpg?oh=a0ec4071f87126692ae43524d8be2394&oe=598B3798",
+    "Monte-Carlo",
+    "960px",
+    "640px")
