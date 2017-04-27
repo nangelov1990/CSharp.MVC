@@ -1,13 +1,14 @@
-﻿using CarDealerApp.Security;
-
-namespace CarDealerApp.Controllers
+﻿namespace CarDealerApp.Controllers
 {
+    using System;
     using System.Collections.Generic;
     using System.Web.Mvc;
 
     using CarDealer.Models.BindingModels.Cars;
     using CarDealer.Models.ViewModels.Cars;
     using CarDealer.Services;
+    using Security;
+    using Filters;
 
     [RoutePrefix("cars")]
     [Route("all")]
@@ -34,14 +35,25 @@ namespace CarDealerApp.Controllers
 
         [HttpGet]
         [Route("{id:int}/parts")]
+        [HandleError(ExceptionType =typeof(ArgumentOutOfRangeException), View = "ArgumentError")]
         // GET: Car with list of Parts
         public ActionResult About(int id)
         {
-            AboutCarVm viewModels =
+            AboutCarVm viewModel =
                 this.service.GetCarWithParts(id);
+
+            if (viewModel == null)
+            {
+                throw new ArgumentOutOfRangeException(nameof(id), id, "There is no such element with provided ID.");
+            }
+            else if (viewModel.Car.TravelledDistance > 1000000)
+            {
+                throw new InvalidOperationException("The car is too old to be displayed.");
+            }
+
             this.GetUsernameOfLoggedUser();
 
-            return this.View(viewModels);
+            return this.View(viewModel);
         }
 
         [HttpGet]

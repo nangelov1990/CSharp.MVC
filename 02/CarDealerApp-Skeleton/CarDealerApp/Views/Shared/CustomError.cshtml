@@ -1,0 +1,12 @@
+﻿@model HandleErrorInfo
+
+@{
+    ViewBag.Title = "Error: " + ViewBag.Title;
+}
+
+<body>
+    <hgroup>
+        <h1>Sorry, an error occurred while processing your request.</h1>
+        <h2>Error: @Model.Exception.Message</h2>
+    </hgroup>
+</body>

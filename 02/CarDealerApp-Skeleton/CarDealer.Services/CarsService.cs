@@ -1,5 +1,6 @@
 ﻿namespace CarDealer.Services
 {
+    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -39,18 +40,23 @@
         public AboutCarVm GetCarWithParts(int id)
         {
             Car car = this.Context.Cars.Find(id);
-            IEnumerable<Part> parts = car.Parts;
-
-            CarVm carVm = Mapper.Instance.Map<Car, CarVm>(car);
-            IEnumerable<PartVm> partsVm = Mapper.Instance.Map<IEnumerable<Part>, IEnumerable<PartVm>>(parts);
-
-            AboutCarVm viewModel = new AboutCarVm()
+            if (car != null)
             {
-                Car = carVm,
-                Parts = partsVm
-            };
+                IEnumerable<Part> parts = car.Parts;
 
-            return viewModel;
+                CarVm carVm = Mapper.Instance.Map<Car, CarVm>(car);
+                IEnumerable<PartVm> partsVm = Mapper.Instance.Map<IEnumerable<Part>, IEnumerable<PartVm>>(parts);
+
+                AboutCarVm viewModel = new AboutCarVm()
+                {
+                    Car = carVm,
+                    Parts = partsVm
+                };
+
+                return viewModel;
+            }
+
+            return null;
         }
 
         public void AddCar(AddCarBm bind)
