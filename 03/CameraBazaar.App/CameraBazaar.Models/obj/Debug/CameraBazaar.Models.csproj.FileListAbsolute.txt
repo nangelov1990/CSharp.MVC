@@ -1,0 +1,5 @@
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Models\bin\Debug\CameraBazaar.Models.dll
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Models\bin\Debug\CameraBazaar.Models.pdb
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.csprojResolveAssemblyReference.cache
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.dll
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.pdb

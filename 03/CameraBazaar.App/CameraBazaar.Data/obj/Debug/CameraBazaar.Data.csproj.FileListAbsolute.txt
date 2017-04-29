@@ -1,0 +1,12 @@
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\bin\Debug\CameraBazaar.Data.dll.config
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\bin\Debug\CameraBazaar.Data.dll
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\bin\Debug\CameraBazaar.Data.pdb
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\bin\Debug\CameraBazaar.Models.dll
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\bin\Debug\EntityFramework.dll
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\bin\Debug\CameraBazaar.Models.pdb
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\bin\Debug\EntityFramework.xml
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\obj\Debug\CameraBazaar.Data.csprojResolveAssemblyReference.cache
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\obj\Debug\CameraBazaar.Data.dll
+F:\Projects\SU\CSharp.MVC\03\CameraBazaar.App\CameraBazaar.Data\obj\Debug\CameraBazaar.Data.pdb
