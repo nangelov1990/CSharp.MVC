@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Dashboard.Models.ViewModels.Request.SingleRequestListView>
+
+@{
+    ViewBag.Title = "All Requests";
+}
+
+<h2>All Requests</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayName("Actions")
+        </th>
+</tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Open", "Open", "Requests", new {area = "Employee"}, new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>

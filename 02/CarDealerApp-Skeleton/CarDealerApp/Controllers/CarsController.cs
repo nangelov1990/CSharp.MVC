@@ -8,7 +8,6 @@
     using CarDealer.Models.ViewModels.Cars;
     using CarDealer.Services;
     using Security;
-    using Filters;
 
     [RoutePrefix("cars")]
     [Route("all")]

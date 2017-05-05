@@ -1,0 +1,36 @@
+﻿@model Dashboard.Models.ViewModels.Request.AssignEmployeeToRequestViewModel
+@{
+    ViewBag.Title = "Assign Request";
+}
+
+<h2>Assign</h2>
+
+@using (Html.BeginForm("Assign", "Requests", new {area = "Admin"}, FormMethod.Post, new {@class = "form-horizontal", role = "form"}))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.RequestId)
+    @Html.HiddenFor(m => m.DistributorUsername)
+    <h4>Request</h4>
+    <hr/>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Employees, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownList("employeeId", Model.Employees.Select(e => new SelectListItem
+                {
+                    Value = e.Id.ToString(),
+                    Text = e.Username
+                }), new { id = "employeeId", @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Assign" />
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

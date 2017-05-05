@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Dashboard;
-using Dashboard.Controllers;
+using Dashboard.App;
 
 namespace Dashboard.Tests.Controllers
 {

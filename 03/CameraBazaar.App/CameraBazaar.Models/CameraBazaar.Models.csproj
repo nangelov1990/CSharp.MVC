@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingModels\UserBm.cs" />
     <Compile Include="EntityModels\Camera.cs" />
     <Compile Include="EntityModels\User.cs" />
     <Compile Include="Enums\CameraMake.cs" />

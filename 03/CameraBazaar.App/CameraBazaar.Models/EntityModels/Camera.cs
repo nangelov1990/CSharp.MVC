@@ -1,5 +1,6 @@
 ﻿namespace CameraBazaar.Models.EntityModels
 {
+    using System.Collections.Generic;
     using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using Enums;
@@ -40,7 +41,7 @@
         [MaxLength(15)]
         public string VideoResolution { get; set; }
 
-        public LigthMetering LigthMetering { get; set; }
+        public IEnumerable<LigthMetering> LigthMetering { get; set; }
 
         [MaxLength(6000)]
         public string Description { get; set; }

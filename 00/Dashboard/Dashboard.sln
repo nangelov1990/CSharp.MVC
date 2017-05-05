@@ -3,15 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard", "Dashboard\Dashboard.csproj", "{82DB3BAD-F7C4-4A17-8C4A-5D3B24B1A324}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Tests", "Dashboard.Tests\Dashboard.Tests.csproj", "{95FAD120-0BFE-4CAD-A017-03BEED3330CD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Services", "Dashboard.Services\Dashboard.Services.csproj", "{75761754-038B-4DD6-A9A7-E009E6A422BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Data", "Dashboard.Data\Dashboard.Data.csproj", "{18E887B1-9E3B-43F3-A96A-A43082268606}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A558D0A9-DCE8-4252-9CDF-020511087A72} = {A558D0A9-DCE8-4252-9CDF-020511087A72}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Models", "Dashboard.Models\Dashboard.Models.csproj", "{A558D0A9-DCE8-4252-9CDF-020511087A72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.App", "Dashboard.App\Dashboard.App.csproj", "{82DB3BAD-F7C4-4A17-8C4A-5D3B24B1A324}"
+	ProjectSection(ProjectDependencies) = postProject
+		{75761754-038B-4DD6-A9A7-E009E6A422BE} = {75761754-038B-4DD6-A9A7-E009E6A422BE}
+		{18E887B1-9E3B-43F3-A96A-A43082268606} = {18E887B1-9E3B-43F3-A96A-A43082268606}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +26,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{82DB3BAD-F7C4-4A17-8C4A-5D3B24B1A324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82DB3BAD-F7C4-4A17-8C4A-5D3B24B1A324}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82DB3BAD-F7C4-4A17-8C4A-5D3B24B1A324}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82DB3BAD-F7C4-4A17-8C4A-5D3B24B1A324}.Release|Any CPU.Build.0 = Release|Any CPU
 		{95FAD120-0BFE-4CAD-A017-03BEED3330CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{95FAD120-0BFE-4CAD-A017-03BEED3330CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95FAD120-0BFE-4CAD-A017-03BEED3330CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +42,10 @@ Global
 		{A558D0A9-DCE8-4252-9CDF-020511087A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A558D0A9-DCE8-4252-9CDF-020511087A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A558D0A9-DCE8-4252-9CDF-020511087A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DB3BAD-F7C4-4A17-8C4A-5D3B24B1A324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DB3BAD-F7C4-4A17-8C4A-5D3B24B1A324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DB3BAD-F7C4-4A17-8C4A-5D3B24B1A324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DB3BAD-F7C4-4A17-8C4A-5D3B24B1A324}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

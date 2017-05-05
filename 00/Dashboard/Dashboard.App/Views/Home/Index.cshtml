@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Dashboard System</h1>
+    <p class="lead">Dashboard System is a free web application. It is intended to help organizing tasks.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Admin and Employee</h2>
+        <p>
+            An admin is seeded when the app is started for the first time. An admin can add employees and additional admins. Admins can see all request and  assign them to all available employees.
+            An employee can only see and work on requests that are assigned to the this employee account and should accept and process the requests.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Customer</h2>
+        <p>Customers are free to register and add requests to the dashboard. They can monitor the process at any time for all their requests.</p>
+        @Html.ActionLink("Customer Login", "Login", "Account", new { area = "" }, null)
+    </div>
+    <div class="col-md-4">
+        <h2>Request</h2>
+        <p>The request consist of name, message, type, status and time of creation. Once created it is in status NEW, waiting to be assigned and accepted. Only customers can create requests.</p>
+    </div>
+</div>

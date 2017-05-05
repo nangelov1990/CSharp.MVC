@@ -1,0 +1,17 @@
+﻿<li>
+    @Html.ActionLink("All Requests", "All", "Requests", new { area = "Admin" }, null)
+</li>
+<li class="dropdown dropdown-buttonbox">
+    <a class="dropdown-toggle dropdown-button" type="button" data-toggle="dropdown">
+        All Employees
+        <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <span class="label label-default center-block">Admins</span>
+        <li>@Html.ActionLink("Admins", "All", "Admins", new { area = "Admin" }, new { @class = "btn" })</li>
+        <li>@Html.ActionLink("Add", "Add", "Admins", new { area = "Admin" }, new { @class = "btn" })</li>
+        <span class="label label-default center-block">Employees</span>
+        <li>@Html.ActionLink("Employees", "All", "Employees", new { area = "Admin" }, new { @class = "btn" })</li>
+        <li>@Html.ActionLink("Add", "Add", "Employees", new { area = "Admin" }, new { @class = "btn" })</li>
+    </ul>
+</li>
