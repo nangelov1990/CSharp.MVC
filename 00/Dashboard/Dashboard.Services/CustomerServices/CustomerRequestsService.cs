@@ -14,7 +14,6 @@
         public void AddCustomerRequest(AddRequestBindingModel model, string userName)
         {
             RequestStatus status = RequestStatus.New;
-            bool edited = false;
             DateTime createdTime = DateTime.Now;
             ApplicationUser user = this.Context.Users.FirstOrDefault(appuser => appuser.UserName == userName);
             Customer customer = this.Context.Customers.FirstOrDefault(cust => cust.ApplicationUser.Id == user.Id);

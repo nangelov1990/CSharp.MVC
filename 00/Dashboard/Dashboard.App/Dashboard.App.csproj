@@ -252,6 +252,8 @@
     <Content Include="Areas\Admin\Views\Admins\Add.cshtml" />
     <Content Include="Areas\Admin\Views\Admins\All.cshtml" />
     <Content Include="Areas\Admin\Views\Employees\All.cshtml" />
+    <Content Include="Areas\Admin\Views\Requests\_AssignOpenButtons.cshtml" />
+    <Content Include="Areas\Admin\Views\Requests\_OpenButton.cshtml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

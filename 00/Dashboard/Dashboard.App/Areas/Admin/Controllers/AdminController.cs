@@ -10,6 +10,7 @@
     using Models.BindingModels.Employee;
     using Models.EntityModels;
     using Models.ViewModels.Employee;
+    using Models.ViewModels.Request;
     using Services.AdminServices;
 
     [RouteArea("Admin"), RoutePrefix("")]

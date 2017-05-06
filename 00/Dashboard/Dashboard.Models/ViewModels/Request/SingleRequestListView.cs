@@ -14,5 +14,7 @@
         public string Name { get; set; }
 
         public virtual Employee Owner { get; set; }
+
+        public bool Assigned => this.Status != RequestStatus.New;
     }
 }

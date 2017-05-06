@@ -40,10 +40,17 @@
             @Html.DisplayFor(modelItem => item.Owner.ApplicationUser.Name)
         </td>
         <td>
-            @((item.Status == Dashboard.Models.Enums.RequestStatus.New)
-                ? Html.ActionLink("Assign", "Assign", "Requests", new { area = "Admin" }, new { id = item.Id })
-                : Html.ActionLink("Open", "Open", "Requests", new { area = "Employee" }, new { id = item.Id }))
+            @Html.Action("LoadButtons", new { request = item })
+            @*            @if (item.Assigned)*@
+            @*            {*@
+            @*                @Html.ActionLink("Assign", "Assign", "Requests", new {Area = "Employee"}, new {id = item.Id})*@
+            @*            }*@
+            @*            else*@
+            @*            {*@
+            @*                @Html.ActionLink("Open", "Open", "Requests", new {Area = "Employee"}, new {id = item.Id})*@
+            @*            }*@
         </td>
+
     </tr>
 }
 

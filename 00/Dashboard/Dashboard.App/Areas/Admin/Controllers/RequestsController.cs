@@ -61,17 +61,17 @@
         }
 
         [ChildActionOnly]
-        [Route("ConfigureOptions/{id}")]
-        public ActionResult ConfigureOptions(int id)
+        [Route("LoadButtons/{request}")]
+        public ActionResult LoadButtons(SingleRequestListView request)
         {
-            var requestAssigned = this._service.IsRequestAssigned(id);
-            if (requestAssigned)
+            ViewBag.RequestId = request.Id;
+            if (request.Assigned)
             {
                 return PartialView("_OpenButton");
             }
             else
             {
-                return PartialView("_AssignButton");
+                return PartialView("_AssignOpenButtons");
             }
         }
     }
